@@ -1,0 +1,24 @@
+{
+  "server_name": "weather-service",
+  "tools": [
+    {
+      "name": "get_current_weather",
+      "description": "Returns the current weather conditions for a given city, including temperature, humidity, and wind speed.",
+      "inputSchema": {
+        "properties": {
+          "city": {"type": "string", "description": "The name of the city to look up, e.g. 'Toronto'"},
+          "units": {"type": "string", "description": "Temperature units, either 'celsius' or 'fahrenheit'"}
+        }
+      }
+    },
+    {
+      "name": "get_forecast",
+      "description": "Returns a 5-day weather forecast for a given city.",
+      "inputSchema": {
+        "properties": {
+          "city": {"type": "string", "description": "The name of the city to look up"}
+        }
+      }
+    }
+  ]
+}

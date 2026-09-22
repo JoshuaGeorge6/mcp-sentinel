@@ -1,0 +1,21 @@
+[project]
+name = "mcp-sentinel"
+version = "0.1.0"
+description = "Security scanner + agent for the Model Context Protocol (MCP)"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=2.2,<3",
+    "rich>=13.0",
+    "pyfiglet>=1.0",
+]
+
+[project.scripts]
+sentinel = "mcp_sentinel.cli:main"
+sentinel-mcp = "mcp_sentinel.mcp_server:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["mcp_sentinel"]
