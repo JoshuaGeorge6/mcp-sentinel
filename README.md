@@ -52,7 +52,6 @@ The default model is `gemini-3.6-flash`. To choose another available model:
 export GEMINI_MODEL="your-model-id"
 ```
 
-Do not commit API keys. Keep them in your terminal environment or a local `.env` file, which is ignored by Git.
 
 ## Use as an MCP server
 
